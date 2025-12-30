@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Époque - Restaurant Gastronomique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>La Belle Époque</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservation" class="btn-nav">Réserver</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Bienvenue à La Belle Époque</h1>
+            <p class="hero-subtitle">Une expérience culinaire d'exception</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Découvrir le Menu</a>
+                <a href="#reservation" class="btn btn-secondary">Réserver une Table</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Section Info Rapide -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horaires</h3>
+                    <p>Mar - Sam: 12h - 14h30<br>19h - 22h30</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>15 Rue de la Gastronomie<br>31000 Toulouse</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Réservation</h3>
+                    <p>+33 5 61 00 00 00<br>contact@labelleepoque.fr</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Carte</h2>
+                <p>Des plats raffinés préparés avec des produits frais et locaux</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="entrees">Entrées</button>
+                <button class="menu-tab" data-category="plats">Plats</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="vins">Vins</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Entrées -->
+                <div class="menu-category active" data-category="entrees">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/foie-gras-mi-cuit.png" alt="Foie Gras">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Foie Gras Mi-Cuit</h3>
+                                    <span class="price">24€</span>
+                                </div>
+                                <p class="item-description">Chutney de figues, pain brioché toasté</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/carpaccio-de-saint-jacques.png" alt="Saint-Jacques">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Carpaccio de Saint-Jacques</h3>
+                                    <span class="price">22€</span>
+                                </div>
+                                <p class="item-description">Agrumes, caviar d'Aquitaine, huile de truffe</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/veloute-de-chataignes.png" alt="Velouté">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Velouté de Châtaignes</h3>
+                                    <span class="price">16€</span>
+                                </div>
+                                <p class="item-description">Mousse de cèpes, lard fumé croustillant</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/terrine-de-canard.png" alt="Terrine">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Terrine de Canard</h3>
+                                    <span class="price">18€</span>
+                                </div>
+                                <p class="item-description">Confiture d'oignons, mesclun de saison</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plats -->
+                <div class="menu-category" data-category="plats">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/magret-de-canard-roti.png" alt="Magret de Canard">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Magret de Canard Rôti</h3>
+                                    <span class="price">32€</span>
+                                </div>
+                                <p class="item-description">Purée de patate douce, légumes de saison, jus au miel</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/bar-de-ligne-grille.png" alt="Bar de Ligne">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Bar de Ligne Grillé</h3>
+                                    <span class="price">36€</span>
+                                </div>
+                                <p class="item-description">Risotto crémeux aux asperges, beurre blanc citronné</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/filet-de-bœuf-rossini.png" alt="Filet de Bœuf">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Filet de Bœuf Rossini</h3>
+                                    <span class="price">42€</span>
+                                </div>
+                                <p class="item-description">Foie gras poêlé, pommes sarladaises, sauce aux truffes</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/risotto-aux-cepes.png" alt="Risotto">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Risotto aux Cèpes</h3>
+                                    <span class="price">28€</span>
+                                </div>
+                                <p class="item-description">Parmesan 24 mois, émulsion de champignons (V)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" data-category="desserts">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/tarte-fine-aux-pommes.png" alt="Tarte aux Pommes">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Tarte Fine aux Pommes</h3>
+                                    <span class="price">12€</span>
+                                </div>
+                                <p class="item-description">Caramel au beurre salé, glace vanille Bourbon</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/fondant-au-chocolat.png" alt="Fondant au Chocolat">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Fondant au Chocolat</h3>
+                                    <span class="price">14€</span>
+                                </div>
+                                <p class="item-description">Cœur coulant, sorbet framboise maison</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/creme-brulee-a-la-vanille.png" alt="Crème Brûlée">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Crème Brûlée à la Vanille</h3>
+                                    <span class="price">11€</span>
+                                </div>
+                                <p class="item-description">Recette traditionnelle, sablés bretons</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/assortiment-de-fromages.png" alt="Fromages">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Assortiment de Fromages</h3>
+                                    <span class="price">15€</span>
+                                </div>
+                                <p class="item-description">Sélection du maître fromager, confiture maison</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vins -->
+                <div class="menu-category" data-category="vins">
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/chateau-margaux-2015.png" alt="Château Margaux">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Château Margaux 2015</h3>
+                                    <span class="price">180€</span>
+                                </div>
+                                <p class="item-description">Grand Cru Classé, Bordeaux</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/chablis-premier-cru.png" alt="Chablis">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Chablis Premier Cru</h3>
+                                    <span class="price">65€</span>
+                                </div>
+                                <p class="item-description">Bourgogne blanc, notes minérales</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/chateauneuf-du-pape.png" alt="Châteauneuf-du-Pape">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Châteauneuf-du-Pape</h3>
+                                    <span class="price">85€</span>
+                                </div>
+                                <p class="item-description">Vallée du Rhône, puissant et épicé</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-image">
+                                <img src="images/champagne-bollinger.png" alt="Champagne">
+                            </div>
+                            <div class="menu-item-content">
+                                <div class="item-header">
+                                    <h3>Champagne Bollinger</h3>
+                                    <span class="price">120€</span>
+                                </div>
+                                <p class="item-description">Brut, notes de brioche et fruits secs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="gallery-section" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Galerie</h2>
+                <p>Découvrez l'ambiance et nos créations culinaires</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-image="1">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Restaurant ambiance">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="2">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800" alt="Plat gastronomique">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="3">
+                    <img src="https://images.unsplash.com/photo-1551218372-a8789b81b253?w=800" alt="Intérieur restaurant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="4">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=800" alt="Dessert">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="5">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Bar restaurant">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="6">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=800" alt="Chef cuisine">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="Image agrandie" id="lightbox-img">
+        <div class="lightbox-nav">
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Section À Propos -->
+    <section class="about-section" id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-header align-left">
+                        <h2>Notre Histoire</h2>
+                        <p>Une passion pour la gastronomie française</p>
+                    </div>
+                    <div class="about-text">
+                        <p>Fondé en 2010, <strong>La Belle Époque</strong> est né de la passion de notre chef étoilé, Philippe Dubois, pour la cuisine française traditionnelle revisitée avec créativité.</p>
+                        <p>Chaque plat est une œuvre d'art, préparée avec des ingrédients soigneusement sélectionnés auprès de producteurs locaux. Notre équipe dévouée travaille chaque jour pour vous offrir une expérience culinaire inoubliable dans un cadre élégant et chaleureux.</p>
+                        <p>Récompensé par une étoile au Guide Michelin en 2018, notre restaurant continue d'innover tout en respectant les traditions qui font la richesse de notre patrimoine gastronomique.</p>
+                    </div>
+                    <div class="chef-signature">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=150" alt="Chef signature">
+                        <div>
+                            <strong>Philippe Dubois</strong>
+                            <p>Chef Exécutif</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800" alt="Chef en cuisine">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Équipe -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Équipe</h2>
+                <p>Des professionnels passionnés à votre service</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=400" alt="Philippe Dubois">
+                    <h3>Philippe Dubois</h3>
+                    <p>Chef Exécutif</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=400" alt="Sophie Martin">
+                    <h3>Sophie Martin</h3>
+                    <p>Sommelière</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=400" alt="Marc Lefèvre">
+                    <h3>Marc Lefèvre</h3>
+                    <p>Chef Pâtissier</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réservation -->
+    <section class="reservation-section" id="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Réserver une Table</h2>
+                <p>Nous serons ravis de vous accueillir</p>
+            </div>
+            <div class="reservation-content">
+                <form class="reservation-form" id="reservation-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Nombre de personnes *</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Sélectionner</option>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="7+">7+ personnes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Heure *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Sélectionner</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Demandes spéciales, allergies, occasion..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Confirmer la Réservation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Contactez-nous</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>15 Rue de la Gastronomie<br>31000 Toulouse, France</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+33 5 61 00 00 00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contact@labelleepoque.fr</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Mardi - Samedi<br>12h - 14h30 / 19h - 22h30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92685.33097184393!2d1.3628008!3d43.6044622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebb6fec7552ff%3A0x406f69c2f411030!2sToulouse!5e0!3m2!1sfr!2sfr!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>La Belle Époque</h3>
+                    <p>Restaurant gastronomique étoilé au cœur de Toulouse, proposant une cuisine française raffinée dans un cadre élégant.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#galerie">Galerie</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">CGV</a></li>
+                        <li><a href="#">Recrutement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Recevez nos actualités et promotions</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Belle Époque. Tous droits réservés. | Développé par Olive</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
