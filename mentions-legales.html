@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentions Légales - La Belle Époque</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .legal-page {
+            padding: 120px 0 80px;
+            background: var(--light-bg);
+            min-height: 100vh;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .legal-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .legal-header h1 {
+            font-size: 48px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .legal-header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .legal-content {
+            background: var(--white);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .legal-section {
+            margin-bottom: 40px;
+        }
+
+        .legal-section h2 {
+            font-size: 28px;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .legal-section h3 {
+            font-size: 22px;
+            color: var(--accent-color);
+            margin: 25px 0 15px;
+        }
+
+        .legal-section p,
+        .legal-section li {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .legal-section ul {
+            margin-left: 20px;
+        }
+
+        .legal-section ul li {
+            margin-bottom: 10px;
+            list-style: disc;
+        }
+
+        .legal-section strong {
+            color: var(--secondary-color);
+        }
+
+        .legal-section a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .legal-section a:hover {
+            color: var(--accent-color);
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-link a {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--primary-color);
+            color: var(--secondary-color);
+            border-radius: 50px;
+            font-weight: bold;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .back-link a:hover {
+            background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .legal-header h1 {
+                font-size: 32px;
+            }
+
+            .legal-content {
+                padding: 30px 20px;
+            }
+
+            .legal-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>La Belle Époque</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#menu" class="nav-link">Menu</a></li>
+                <li><a href="index.html#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="index.html#apropos" class="nav-link">À Propos</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html#reservation" class="btn-nav">Réserver</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Legal Page -->
+    <section class="legal-page">
+        <div class="legal-container">
+            <div class="legal-header">
+                <h1>Mentions Légales</h1>
+                <p>Informations légales concernant le site La Belle Époque</p>
+            </div>
+
+            <div class="legal-content">
+                <div class="legal-section">
+                    <h2>1. Informations sur l'éditeur</h2>
+                    <p><strong>Raison sociale :</strong> La Belle Époque SARL</p>
+                    <p><strong>Forme juridique :</strong> Société à Responsabilité Limitée</p>
+                    <p><strong>Capital social :</strong> 50 000 €</p>
+                    <p><strong>Siège social :</strong> 15 Rue de la Gastronomie, 31000 Toulouse, France</p>
+                    <p><strong>SIRET :</strong> 123 456 789 00012</p>
+                    <p><strong>TVA intracommunautaire :</strong> FR 12 123456789</p>
+                    <p><strong>Téléphone :</strong> +33 5 61 00 00 00</p>
+                    <p><strong>Email :</strong> contact@labelleepoque.fr</p>
+                    <p><strong>Directeur de la publication :</strong> Philippe Dubois</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>2. Hébergement du site</h2>
+                    <p><strong>Hébergeur :</strong> GitHub Pages</p>
+                    <p><strong>Société :</strong> GitHub, Inc.</p>
+                    <p><strong>Adresse :</strong> 88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</p>
+                    <p><strong>Site web :</strong> <a href="https://pages.github.com" target="_blank">https://pages.github.com</a></p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>3. Propriété intellectuelle</h2>
+                    <p>L'ensemble du contenu de ce site (textes, images, vidéos, logos, graphismes, etc.) est la propriété exclusive de La Belle Époque SARL, sauf mention contraire.</p>
+                    <p>Toute reproduction, représentation, modification, publication ou adaptation totale ou partielle des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite sans l'autorisation écrite préalable de La Belle Époque SARL.</p>
+                    <p>Toute exploitation non autorisée du site ou de l'un des éléments qu'il contient sera considérée comme constitutive d'une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>4. Protection des données personnelles</h2>
+                    <p>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.</p>
+                    <p>Pour exercer ces droits, vous pouvez nous contacter :</p>
+                    <ul>
+                        <li>Par email : contact@labelleepoque.fr</li>
+                        <li>Par courrier : La Belle Époque SARL, 15 Rue de la Gastronomie, 31000 Toulouse</li>
+                    </ul>
+                    <p>Pour plus d'informations sur la gestion de vos données personnelles, consultez notre <a href="politique-confidentialite.html">Politique de Confidentialité</a>.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>5. Cookies</h2>
+                    <p>Ce site utilise des cookies pour améliorer l'expérience utilisateur et analyser le trafic. En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies.</p>
+                    <p>Vous pouvez désactiver les cookies dans les paramètres de votre navigateur.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>6. Responsabilité</h2>
+                    <p>La Belle Époque SARL s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, elle ne peut garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition.</p>
+                    <p>En conséquence, La Belle Époque SARL décline toute responsabilité pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>7. Liens hypertextes</h2>
+                    <p>Le site peut contenir des liens hypertextes vers d'autres sites. La Belle Époque SARL n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu.</p>
+                    <p>La mise en place de liens hypertextes vers le site nécessite l'autorisation préalable de La Belle Époque SARL.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>8. Droit applicable</h2>
+                    <p>Les présentes mentions légales sont régies par le droit français. En cas de litige et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur.</p>
+                </div>
+
+                <div class="legal-section">
+                    <h2>9. Contact</h2>
+                    <p>Pour toute question concernant les mentions légales, vous pouvez nous contacter :</p>
+                    <ul>
+                        <li><strong>Email :</strong> contact@labelleepoque.fr</li>
+                        <li><strong>Téléphone :</strong> +33 5 61 00 00 00</li>
+                        <li><strong>Adresse :</strong> 15 Rue de la Gastronomie, 31000 Toulouse</li>
+                    </ul>
+                </div>
+
+                <p style="text-align: center; color: #999; margin-top: 40px; font-size: 14px;">
+                    Dernière mise à jour : Janvier 2025
+                </p>
+
+                <div class="back-link">
+                    <a href="index.html"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>La Belle Époque</h3>
+                    <p>Restaurant gastronomique étoilé au cœur de Toulouse.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html#accueil">Accueil</a></li>
+                        <li><a href="index.html#menu">Menu</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>+33 5 61 00 00 00<br>contact@labelleepoque.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Belle Époque. Tous droits réservés. | Développé par Olive</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
