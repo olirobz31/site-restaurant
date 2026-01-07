@@ -71,7 +71,7 @@ start index.html
 2. Aller dans Settings > Pages
 3. Sélectionner la branche `main`
 4. Cliquer sur Save
-5. Votre site sera disponible à `https://votre-username.github.io/site-restaurant/`
+5. Votre site sera disponible à `[https://votre-username.github.io/site-restaurant/](https://olirobz31.github.io/site-freelance-premium/#)`
 
 ## 📝 Personnalisation
 
@@ -182,9 +182,9 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 
 ## 📧 Contact
 
-**Développeur** : Olive  
-**Portfolio** : [olivedeveloppeur.fr](https://olivedeveloppeur.fr)  
-**Email** : contact@olivedeveloppeur.fr
+**Développeur** : DocSmart  
+**Portfolio** : [[olivedeveloppeur.fr](https://olivedeveloppeur.fr)](https://olirobz31.github.io/site-freelance-premium/#)  
+**Email** : olirobz3@gmail.com
 
 ## 📄 Licence
 
@@ -194,4 +194,4 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ⭐ Si ce template vous a été utile, n'hésitez pas à mettre une étoile au projet !
 
-**Fait avec ❤️ par Olive | Template Restaurant Premium**
+**Fait avec ❤️ par Olivier | Template Restaurant Premium**
