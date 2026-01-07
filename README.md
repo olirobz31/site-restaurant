@@ -183,8 +183,8 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 ## 📧 Contact
 
 **Développeur** : DocSmart  
-**Portfolio** : [[olivedeveloppeur.fr](https://olivedeveloppeur.fr)](https://olirobz31.github.io/site-freelance-premium/#)  
-**Email** : olirobz3@gmail.com
+**Portfolio** : (https://olirobz31.github.io/site-freelance-premium/#)  
+**Email** : olirobz31@gmail.com
 
 ## 📄 Licence
 
