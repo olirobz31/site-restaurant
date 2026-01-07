@@ -71,7 +71,7 @@ start index.html
 2. Aller dans Settings > Pages
 3. Sélectionner la branche `main`
 4. Cliquer sur Save
-5. Votre site sera disponible à `[https://votre-username.github.io/site-restaurant/](https://olirobz31.github.io/site-freelance-premium/#)`
+5. Votre site sera disponible à `https://olirobz31.github.io/site-freelance-premium/#`
 
 ## 📝 Personnalisation
 
