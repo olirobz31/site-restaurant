@@ -1,0 +1,15 @@
+# Robots.txt pour La Belle Époque Restaurant
+# https://olirobz31.github.io/site-restaurant/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://olirobz31.github.io/site-restaurant/sitemap.xml
+
+# Disallow certains fichiers (optionnel)
+Disallow: /script.js
+Disallow: /style.css
+
+# Crawl-delay (optionnel)
+Crawl-delay: 10
