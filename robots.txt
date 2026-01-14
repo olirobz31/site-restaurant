@@ -5,8 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://olirobz31.github.io/site-restaurant/sitemap.xml
-
+Sitemap: https://olirobz31.github.io/site-restaurant/sitemap.html
 # Disallow certains fichiers (optionnel)
 Disallow: /script.js
 Disallow: /style.css
