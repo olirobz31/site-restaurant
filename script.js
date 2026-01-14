@@ -317,14 +317,3 @@ console.log('%c🍽️ La Belle Époque', 'color: #d4af37; font-size: 24px; font
 console.log('%cSite développé par Olive', 'color: #666; font-size: 14px;');
 console.log('%cRestaurant gastronomique - Toulouse', 'color: #999; font-size: 12px;');
 
-// BOUTON RÉSERVER - Scroll vers contact
-document.querySelector('.btn-reserve').addEventListener('click', () => {
-    const contactSection = document.querySelector('#contact');
-    const navHeight = document.querySelector('.navbar').offsetHeight;
-    const targetPosition = contactSection.offsetTop - navHeight;
-    
-    window.scrollTo({
-        top: targetPosition,
-        behavior: 'smooth'
-    });
-});
